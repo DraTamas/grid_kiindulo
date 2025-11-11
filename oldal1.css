@@ -1,0 +1,66 @@
+nav ul {
+    list-style: none;                 
+    margin: 0;
+    padding: 0;
+    display: grid;                  
+    grid-auto-flow: column;          
+    justify-content: center;         
+    background-color: #333;           
+}
+nav li {
+    text-align: center;
+}
+
+nav a {
+    display: block;                   
+    padding:  24px;
+    text-decoration: none;           
+    color: white;                    
+}
+nav li:hover {
+    background-color: #ff9800;       
+}
+
+nav li:hover a {
+    color: #000;                     
+}
+
+
+#active {
+    background-color: #666;
+}
+article {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+    gap: 20px;
+    justify-content: center; 
+    align-items: center; 
+    direction: rtl;    
+}
+
+.cikk {
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-sizing: border-box;
+    direction: ltr;
+}
+
+.cikk h2 {
+    text-align: center;
+}
+.cikk p {
+    margin: 0;
+}
+.cikk .kep {
+    text-align: center;
+}
+@media (max-width: 600px) {
+    nav ul {
+        grid-auto-flow: row;
+        justify-content: stretch;
+    }
+    nav a {
+        padding: 12px;
+        border-top: 1px solid #444;
+    }
+}
